@@ -51,17 +51,14 @@ aside {
 
 footer {
     clear: both;
-    background-color: black;
+    background-color: blue;
     text-align: center;
     
 }
 
-html{
-box-sizing: border-box; 
-} 
+
+
 /*
-
-
 Description:  theme for Classes
 Author:       J Neathawk
 Author URI:   https://knighthawk0811.github.io
