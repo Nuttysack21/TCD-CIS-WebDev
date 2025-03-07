@@ -1,4 +1,4 @@
-h1{
+<style>h1{
      text-align: center;   /* Centers the text */
     margin: 20px auto;    /* Adds spacing */
     max-width: 90%;       /* Prevents images from being too wide */
@@ -44,3 +44,4 @@ main{
     margin: 20px auto;    /* Adds spacing */
     max-width: 90%;       /* Prevents images from being too wide */
 }
+</style>
