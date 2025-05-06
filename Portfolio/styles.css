@@ -18,6 +18,9 @@ main {
   padding: 20px;
   max-width: 960px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr; /* Single column on mobile */
+  gap: 30px;
 }
 
 /* Header */
@@ -93,16 +96,14 @@ a:hover {
 /* Desktop View */
 @media screen and (min-width: 768px) {
   main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout on desktop */
   }
 
   header, footer {
-    grid-column: span 2;
+    grid-column: span 2; /* Full width */
   }
 
-  #experience, #interests, #game {
-    min-height: 300px;
+  #game {
+    grid-column: span 2; /* Make game section full width */
   }
 }
