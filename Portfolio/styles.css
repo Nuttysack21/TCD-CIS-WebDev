@@ -1,40 +1,101 @@
-/* Default: Mobile First */
-body {
+/* Base Reset */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: sans-serif;
-  background-color: green;
-  color: white;
+  padding: 0;
 }
 
+/* Body Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Mobile-First Main Container */
 main {
   padding: 20px;
-  max-width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-header, section, footer {
-  margin-bottom: 30px;
+/* Header */
+header {
   text-align: center;
+  margin-bottom: 40px;
 }
 
-img {
+header h1 {
+  font-size: 2.5rem;
+  color: #2a2a2a;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+/* Experience, Interests, Game Sections */
+section {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects */
+.project {
+  margin-top: 10px;
+}
+
+.project img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* List for Interests */
 ul {
-  list-style-type: square;
+  list-style-type: disc;
   padding-left: 20px;
-  text-align: left;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Link Styling */
+a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Desktop View */
 @media screen and (min-width: 768px) {
   main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 
   header, footer {
@@ -42,8 +103,6 @@ ul {
   }
 
   #experience, #interests, #game {
-    background-color: #004d00;
-    padding: 15px;
-    border-radius: 10px;
+    min-height: 300px;
   }
 }
