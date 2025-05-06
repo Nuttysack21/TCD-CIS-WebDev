@@ -1,0 +1,49 @@
+/* Default: Mobile First */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: green;
+  color: white;
+}
+
+main {
+  padding: 20px;
+  max-width: 100%;
+}
+
+header, section, footer {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  header, footer {
+    grid-column: span 2;
+  }
+
+  #experience, #interests, #game {
+    background-color: #004d00;
+    padding: 15px;
+    border-radius: 10px;
+  }
+}
